@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoriichi Tsugikuni | Sun Breathing Animation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Poppins:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #0d0000, #000);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-family: 'Kanit', sans-serif;
+      font-size: 3rem;
+      color: #ff3c00;
+      text-shadow: 0 0 20px #ff3c00, 0 0 40px #ff1100;
+      animation: glow 3s infinite alternate;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .scene {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .character img {
+      width: 330px;
+      border-radius: 15px;
+      border: 2px solid #ff3c00;
+      box-shadow: 0 0 30px rgba(255, 60, 0, 0.6);
+    }
+
+    .slash {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,140,0,0.8), rgba(255,40,0,0));
+      animation: spinFlame 3s linear infinite;
+      filter: blur(40px);
+      z-index: 1;
+    }
+
+    .info {
+      text-align: center;
+      max-width: 700px;
+      margin: 60px auto 0;
+      padding: 20px;
+    }
+
+    .info h2 {
+      color: #ff3c00;
+      font-family: 'Kanit', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      color: #ddd;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    /* --- Video Section --- */
+    .video-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      color: #ff3c00;
+      margin-bottom: 20px;
+      font-family: 'Kanit', sans-serif;
+      text-shadow: 0 0 10px #ff3c00;
+    }
+
+    video {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 20px;
+      border: 2px solid #ff3c00;
+      box-shadow: 0 0 25px rgba(255, 60, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff3c00;
+      text-decoration: none;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff3c00, 0 0 30px #ff1100; }
+      to { text-shadow: 0 0 40px #ff6600, 0 0 80px #ff0000; }
+    }
+
+    @keyframes spinFlame {
+      0% { transform: rotate(0deg) scale(1); opacity: 0.6; }
+      50% { transform: rotate(180deg) scale(1.2); opacity: 1; }
+      100% { transform: rotate(360deg) scale(1); opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yoriichi Tsugikuni</h1>
+    <p>The Sun Breathing Legend ⚔️</p>
+  </header>
+
+  <div class="scene">
+    <div class="slash"></div>
+    <div class="character">
+      <img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fc/Yoriichi_Tsugikuni_Anime.png" alt="Yoriichi Tsugikuni">
+    </div>
+  </div>
+
+  <section class="info">
+    <h2>Sun Breathing — Nichirin’s Flame</h2>
+    <p>
+      The original breathing style created by Yoriichi Tsugikuni.  
+      It mimics the power of the sun itself — the one force demons cannot resist.
+    </p>
+  </section>
+
+  <section class="video-section">
+    <h2>🎬 Watch Yoriichi in Action</h2>
+    <!-- 👇 Энд бичлэгээ оруулна -->
+    <video controls autoplay muted loop>
+      <source src="Download.mp4" type="video/mp4">
+      Таны браузер бичлэгийг дэмжихгүй байна.
+    </video>
+  </section>
+
+  <footer>
+    © 2025 Demon Slayer Fan Page | Designed by <a href="#">Your Name</a>
+  </footer>
+</body>
+</html>
